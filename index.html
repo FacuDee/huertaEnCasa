@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huerta EnCasa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Huerta<span>EnCasa</span></h1>
+            </div>
+            
+            <!-- Botón Hamburguesa -->
+            <button class="hamburger-btn" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#guia">Guía de Cultivo</a></li>
+                    <li><a href="#compost">Compost</a></li>
+                    <li><a href="#calendario">Calendario</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2><span>Cultiva</span> tu propia comida</h2>
+            <p>Transforma tu balcón, patio o ventana en una fuente de alimentos frescos y saludables</p>
+            <a href="#guia" class="btn">Comenzar ahora</a>
+        </div>
+    </section>
+
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2 class="section-title">¿Por qué tener tu huerta?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <img src="img/saludable.jpg" alt="Alimentos saludables">
+                    <h3>Alimentos más saludables</h3>
+                    <p>Cultiva sin pesticidas ni químicos dañinos para tu familia.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="img/ahorro.jpg" alt="Ahorro económico">
+                    <h3>Ahorro económico</h3>
+                    <p>Reduce tus gastos en verduras y hierbas aromáticas.</p>
+                </div>
+                <div class="benefit-card">
+                    <img src="img/ecologico.jpg" alt="Impacto ecológico">
+                    <h3>Menor impacto ecológico</h3>
+                    <p>Disminuye la huella de carbono de tus alimentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guia" class="guide">
+        <div class="container">
+            <h2 class="section-title">Guía de Cultivo</h2>
+            
+            <div class="vegetable-tabs">
+                <button class="tab-btn active" data-vegetable="tomate">Tomate</button>
+                <button class="tab-btn" data-vegetable="lechuga">Lechuga</button>
+                <button class="tab-btn" data-vegetable="zanahoria">Zanahoria</button>
+                <button class="tab-btn" data-vegetable="albahaca">Albahaca</button>
+                <button class="tab-btn" data-vegetable="zapallo">Zapallo</button>
+            </div>
+            
+            <div class="vegetable-content active" id="tomate">
+                <div class="vegetable-info">
+                    <h3>Tomate</h3>
+                    <div class="vegetable-details">
+                        <div>
+                            <h4>Época de siembra</h4>
+                            <p>Primavera (después de las últimas heladas)</p>
+                        </div>
+                        <div>
+                            <h4>Tiempo de cosecha</h4>
+                            <p>60-80 días después del trasplante</p>
+                        </div>
+                        <div>
+                            <h4>Requerimientos de luz</h4>
+                            <p>6-8 horas de sol directo</p>
+                        </div>
+                    </div>
+                    <h4>Cuidados</h4>
+                    <ul>
+                        <li>Regar regularmente evitando mojar las hojas</li>
+                        <li>Tutorar las plantas para soporte</li>
+                        <li>Podar los brotes laterales para mejor producción</li>
+                    </ul>
+                </div>
+                <div class="vegetable-image">
+                    <img src="img/tomate.jpg" alt="Cultivo de tomate">
+                </div>
+            </div>
+            
+            <!-- Repetir estructura para otras hortalizas -->
+
+            <div class="vegetable-content" id="lechuga">
+                <div class="vegetable-info">
+                    <h3>Lechuga</h3>
+                    <div class="vegetable-details">
+                        <div>
+                            <h4>Época de siembra</h4>
+                            <p>Todo el año (prefiere climas frescos)</p>
+                        </div>
+                        <div>
+                            <h4>Tiempo de cosecha</h4>
+                            <p>30-60 días después de la siembra</p>
+                        </div>
+                        <div>
+                            <h4>Requerimientos de luz</h4>
+                            <p>4-6 horas de sol</p>
+                        </div>
+                    </div>
+                    <h4>Cuidados</h4>
+                    <ul>
+                        <li>Mantener el suelo constantemente húmedo</li>
+                        <li>Plantar en semisombra en climas cálidos</li>
+                        <li>Cosechar por hojas exteriores para prolongar producción</li>
+                    </ul>
+                </div>
+                <div class="vegetable-image">
+                    <img src="img/lechuga.jpg" alt="Cultivo de lechuga">
+                </div>
+            </div>
+
+            <div class="vegetable-content" id="zanahoria">
+                <div class="vegetable-info">
+                    <h3>Zanahoria</h3>
+                    <div class="vegetable-details">
+                        <div>
+                            <h4>Época de siembra</h4>
+                            <p>Finales de invierno a principios de otoño</p>
+                        </div>
+                        <div>
+                            <h4>Tiempo de cosecha</h4>
+                            <p>70-80 días (variedades tempranas 50-60 días)</p>
+                        </div>
+                        <div>
+                            <h4>Requerimientos de luz</h4>
+                            <p>6 horas de sol mínimo</p>
+                        </div>
+                    </div>
+                    <h4>Cuidados</h4>
+                    <ul>
+                        <li>Suelo suelto y sin piedras para raíces rectas</li>
+                        <li>Riego constante pero moderado</li>
+                        <li>Aclarar plantas cuando midan 5cm (dejar 5cm entre ellas)</li>
+                    </ul>
+                </div>
+                <div class="vegetable-image">
+                    <img src="img/zanahoria.jpg" alt="Cultivo de zanahoria">
+                </div>
+            </div>
+
+            <div class="vegetable-content" id="albahaca">
+                <div class="vegetable-info">
+                    <h3>Albahaca</h3>
+                    <div class="vegetable-details">
+                        <div>
+                            <h4>Época de siembra</h4>
+                            <p>Primavera y verano (no tolera frío)</p>
+                        </div>
+                        <div>
+                            <h4>Tiempo de cosecha</h4>
+                            <p>30-60 días (cosechar continuamente)</p>
+                        </div>
+                        <div>
+                            <h4>Requerimientos de luz</h4>
+                            <p>6-8 horas de sol</p>
+                        </div>
+                    </div>
+                    <h4>Cuidados</h4>
+                    <ul>
+                        <li>Riego regular sin encharcar</li>
+                        <li>Podar flores para prolongar vida de la planta</li>
+                        <li>Cosechar desde arriba para estimular crecimiento</li>
+                    </ul>
+                </div>
+                <div class="vegetable-image">
+                    <img src="img/albahaca.jpg" alt="Cultivo de albahaca">
+                </div>
+            </div>
+
+            <div class="vegetable-content" id="zapallo">
+                <div class="vegetable-info">
+                    <h3>Zapallo</h3>
+                    <div class="vegetable-details">
+                        <div>
+                            <h4>Época de siembra</h4>
+                            <p>Primavera (temperatura del suelo >15°C)</p>
+                        </div>
+                        <div>
+                            <h4>Tiempo de cosecha</h4>
+                            <p>90-120 días según variedad</p>
+                        </div>
+                        <div>
+                            <h4>Requerimientos de luz</h4>
+                            <p>8+ horas de sol directo</p>
+                        </div>
+                    </div>
+                    <h4>Cuidados</h4>
+                    <ul>
+                        <li>Necesita mucho espacio (guías de 2-4m)</li>
+                        <li>Riego profundo 2-3 veces por semana</li>
+                        <li>Colocar paja bajo los frutos para evitar pudrición</li>
+                    </ul>
+                </div>
+                <div class="vegetable-image">
+                    <img src="img/zapallo.jpg" alt="Cultivo de zapallo">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="compost" class="compost-section">
+        <div class="container">
+            <h2 class="section-title">Compostaje en Casa</h2>
+            <p class="section-subtitle">Transforma tus residuos orgánicos en abono nutritivo para tu huerta</p>
+            
+            <div class="compost-grid">
+                <div class="compost-card">
+                    <img src="img/compost-basics.jpg" alt="Fundamentos del compost">
+                    <h3>¿Qué puede compostarse?</h3>
+                    <div class="compost-lists">
+                        <div>
+                            <h4>Materiales verdes (nitrógeno)</h4>
+                            <ul>
+                                <li>Restos de frutas y verduras.</li>
+                                <li>Cáscaras de huevo.</li>
+                                <li>Bolsa de té y café molido.</li>
+                                <li>Hierbas frescas.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Materiales marrones (carbono)</h4>
+                            <ul>
+                                <li>Hojas secas.</li>
+                                <li>Cartón sin tintas.</li>
+                                <li>Papel periódico.</li>
+                                <li>Ramas pequeñas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="compost-card">
+                    <img src="img/compost-methods.jpg" alt="Métodos de compostaje">
+                    <h3>Métodos para hacer compost</h3>
+                    <div class="method">
+                        <h4>Compostera cerrada</h4>
+                        <p>Ideal para espacios pequeños. Usa un contenedor con tapa y agujeros para aireación.</p>
+                    </div>
+                    <div class="method">
+                        <h4>Montón al aire libre</h4>
+                        <p>Para jardines grandes. Apila los materiales directamente en el suelo en un rincón sombreado.</p>
+                    </div>
+                    <div class="method">
+                        <h4>Vermicompostaje</h4>
+                        <p>Usa lombrices rojas para acelerar el proceso. Perfecto para interiores.</p>
+                    </div>
+                </div>
+                
+                <div class="compost-card">
+                    <img src="img/compost-tips.jpg" alt="Consejos para compostar">
+                    <h3>Consejos para éxito seguro</h3>
+                    <ul class="tips-list">
+                        <li>Alterna capas de materiales verdes y marrones.</li>
+                        <li>Mantén la humedad de una esponja escurrida.</li>
+                        <li>Remueve cada 2 semanas para oxigenar.</li>
+                        <li>Evita carnes, lácteos y aceites.</li>
+                        <li>El compost listo huele a tierra fresca.</li>
+                    </ul>
+                    <div class="compost-time">
+                        <h4>Tiempo de descomposición.</h4>
+                        <p>2-6 meses dependiendo del método y condiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendario" class="calendar">
+        <div class="container">
+            <h2 class="section-title">Calendario de Siembra</h2>
+            <p>Consulta qué sembrar según la época del año en tu región</p>
+            <div class="calendar-grid">
+                <!-- Aquí iría una tabla o gráfico con los meses y cultivos -->
+            </div>
+            <a href="#" class="btn" download>Descargar guía completa</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h3>Recibe tips y novedades en tu email</h3>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn">Suscribirme</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Huerta EnCasa</h4>
+                    <p>Promoviendo la autosuficiencia alimentaria desde 2020</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>info@huertaencasa.com.ar</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Huerta EnCasa | by FacuDee. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#inicio" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
